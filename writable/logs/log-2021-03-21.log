@@ -1,0 +1,531 @@
+ERROR - 2021-03-21 00:43:27 --> mysqli_sql_exception: Unknown column 'disposisi.kepada' in 'where clause' in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Guru\Home.php(39): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Home->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Home))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 00:43:27 --> Unknown column 'disposisi.kepada' in 'where clause'
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Guru\Home.php(39): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Home->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Home))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 00:56:44 --> mysqli_sql_exception: Unknown column 'disposisi.kepada' in 'where clause' in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Guru\Home.php(39): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Home->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Home))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 00:56:44 --> Unknown column 'disposisi.kepada' in 'where clause'
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Guru\Home.php(39): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Home->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Home))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:08:06 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:08:06 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:08:18 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:08:18 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:08:33 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:08:33 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:08:38 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:08:38 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:08:42 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:08:42 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:09:20 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:09:20 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:09:54 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:09:54 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:10:24 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:10:24 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:10:31 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:10:31 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:11:30 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:11:30 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:12:28 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:12:28 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2021-03-21 01:14:51 --> mysqli_sql_exception: Column 'id_surat' in where clause is ambiguous in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 01:14:51 --> Column 'id_surat' in where clause is ambiguous
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT `surat_m...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `surat_m...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `surat_m...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT `surat_m...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(66): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(38): App\Models\SuratMasukModel->get_datatables('surat_masuk', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-21 05:18:57 --> Undefined property: App\Controllers\Admin\Disposisi::$output
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\Disposisi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Disposisi->getStatus('10')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Disposisi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 05:19:02 --> Undefined property: App\Controllers\Admin\Disposisi::$output
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\Disposisi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Disposisi->getStatus('2')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Disposisi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 05:19:07 --> Undefined property: App\Controllers\Admin\Disposisi::$output
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\Disposisi.php(86): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 86, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Disposisi->getStatus('10')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Disposisi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:18:09 --> Undefined property: App\Controllers\Guru\Notifikasi::$suratMasukMode
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 19, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:18:28 --> Undefined property: App\Controllers\Guru\Notifikasi::$suratMasukMode
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 19, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:19:59 --> Undefined property: App\Controllers\Guru\Notifikasi::$suratMasukMode
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 19, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:20:08 --> Undefined property: App\Controllers\Guru\Notifikasi::$suratMasukMode
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 19, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:20:28 --> Call to a member function select() on null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:20:44 --> Call to a member function select() on null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:21:15 --> Call to a member function where() on null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 11:21:51 --> Undefined variable: table
+#0 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(92): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 92, Array)
+#1 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-21 11:37:20 --> Call to undefined method App\Models\SuratMasukModel::getResultArray
+#0 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(97): CodeIgniter\Model->__call('getResultArray', Array)
+#1 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-21 11:37:23 --> Call to undefined method App\Models\SuratMasukModel::getResultArray
+#0 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(97): CodeIgniter\Model->__call('getResultArray', Array)
+#1 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-21 11:37:56 --> Too few arguments to function CodeIgniter\Database\BaseConnection::query(), 0 passed in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\BaseModel.php on line 1772 and at least 1 expected
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\BaseModel.php(1772): CodeIgniter\Database\BaseConnection->query()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Model.php(832): CodeIgniter\BaseModel->__call('query', Array)
+#2 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(97): CodeIgniter\Model->__call('query', Array)
+#3 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-21 11:38:40 --> Call to undefined method App\Models\SuratMasukModel::getResult
+#0 D:\xampp\htdocs\ci4\app\Models\SuratMasukModel.php(97): CodeIgniter\Model->__call('getResult', Array)
+#1 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(19): App\Models\SuratMasukModel->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-03-21 11:44:11 --> Cannot use object of type mysqli as array
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-03-21 11:46:52 --> Undefined index: nomor_surat
+#0 D:\xampp\htdocs\ci4\app\Controllers\Guru\Notifikasi.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'D:\\xampp\\htdocs...', 22, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Guru\Notifikasi->notifikasi()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru\Notifikasi))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-21 12:09:49 --> syntax error, unexpected '}', expecting end of file
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}

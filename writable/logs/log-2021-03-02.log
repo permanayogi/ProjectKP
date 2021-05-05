@@ -1,0 +1,16 @@
+CRITICAL - 2021-03-02 00:57:05 --> Undefined property: App\Controllers\Admin\Dashboard::$userModel
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\Dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->getUsers()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-02 00:57:15 --> Undefined property: App\Controllers\Admin\Dashboard::$userModel
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\Dashboard.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 31, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->getUsers()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}

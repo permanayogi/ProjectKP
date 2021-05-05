@@ -1,0 +1,102 @@
+CRITICAL - 2021-03-23 07:29:19 --> Undefined class constant '__construct'
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(19): App\Models\SuratKeluarModel->__construct()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(908): App\Controllers\Admin\SuratKeluar->__construct()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(422): CodeIgniter\CodeIgniter->createController()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 07:39:51 --> Undefined variable: suratMasukModel
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 38, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-03-23 07:40:44 --> mysqli_sql_exception: Table 'db_persuratan.surat_kelar' doesn't exist in D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT COUNT(*)...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1966): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratKeluarModel.php(70): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(58): App\Models\SuratKeluarModel->count_filtered('surat_kelar', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-23 07:40:44 --> Table 'db_persuratan.surat_kelar' doesn't exist
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT COUNT(*)...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1966): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 D:\xampp\htdocs\ci4\app\Models\SuratKeluarModel.php(70): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(58): App\Models\SuratKeluarModel->count_filtered('surat_kelar', Array, Array, Array, Array)
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-03-23 08:12:15 --> Undefined variable: detail
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 52, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 08:12:22 --> Undefined variable: detail
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 52, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 08:17:05 --> syntax error, unexpected '$edit' (T_VARIABLE)
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-23 08:17:22 --> Undefined property: stdClass::$<a href="<?= base_url(); ?>/admin/suratmasuk/download/1263-Article Text-3721-1-10-20191214.pdf>Download</a>
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 52, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 08:17:27 --> Undefined property: stdClass::$<a href="<?= base_url(); ?>/admin/suratmasuk/download/1263-Article Text-3721-1-10-20191214.pdf>Download</a>
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 52, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->ajax_list()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 08:29:06 --> Undefined variable: suratKeluarModel
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratKeluar.php(117): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 117, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratKeluar->download('1')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratKeluar))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-23 08:34:49 --> Undefined variable: id_surat
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(156): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 156, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->edit()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}

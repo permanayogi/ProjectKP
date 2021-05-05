@@ -1,0 +1,66 @@
+CRITICAL - 2021-02-19 01:15:10 --> Undefined variable: ession
+#0 D:\xampp\htdocs\ci4\app\Views\template\sidebar.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/sideba...', NULL, true)
+#4 D:\xampp\htdocs\ci4\app\Views\template\template.php(215): CodeIgniter\View\View->include('template/sideba...')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(236): CodeIgniter\View\View->render('template/templa...', Array, true)
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#9 D:\xampp\htdocs\ci4\app\Controllers\Admin\Dashboard.php(11): view('admin/dashboard')
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#11 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#12 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#14 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2021-02-19 01:15:18 --> Function name must be a string
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(468): CodeIgniter\View\View->render('template/sideba...', NULL, true)
+#3 D:\xampp\htdocs\ci4\app\Views\template\template.php(215): CodeIgniter\View\View->include('template/sideba...')
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(236): CodeIgniter\View\View->render('template/templa...', Array, true)
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('admin/dashboard', Array, true)
+#8 D:\xampp\htdocs\ci4\app\Controllers\Admin\Dashboard.php(11): view('admin/dashboard')
+#9 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\Dashboard->index()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Dashboard))
+#11 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2021-02-19 04:39:19 --> Error connecting to the database: No connection could be made because the target machine actively refused it.
+
+CRITICAL - 2021-02-19 04:39:19 --> Unable to connect to the database.
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Model.php(247): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\BaseModel.php(624): CodeIgniter\Model->doFirst()
+#4 D:\xampp\htdocs\ci4\app\Models\UserModel.php(14): CodeIgniter\BaseModel->first()
+#5 D:\xampp\htdocs\ci4\app\Controllers\Login.php(27): App\Models\UserModel->cekLogin('user1')
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Login->auth()
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-02-19 07:05:27 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 07:05:28 --> Constant expression contains invalid operations
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 07:27:35 --> Declaration of App\Filters\LoginFilter::before(CodeIgniter\HTTP\RequestInterface $request) must be compatible with CodeIgniter\Filters\FilterInterface::before(CodeIgniter\HTTP\RequestInterface $request, $arguments = NULL)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 07:33:34 --> Declaration of App\Filters\LoginFilter::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response) must be compatible with CodeIgniter\Filters\FilterInterface::after(CodeIgniter\HTTP\RequestInterface $request, CodeIgniter\HTTP\ResponseInterface $response, $arguments = NULL)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-02-19 07:46:31 --> syntax error, unexpected 'if' (T_IF)
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(385): CodeIgniter\CodeIgniter->tryToRouteIt(NULL)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#2 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#4 {main}

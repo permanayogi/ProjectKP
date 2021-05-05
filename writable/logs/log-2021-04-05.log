@@ -1,0 +1,64 @@
+CRITICAL - 2021-04-05 22:53:00 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(258): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 258, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('Sster 004.pdf')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-05 22:53:45 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(258): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 258, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('DAFTAR CALON AS...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-05 22:54:32 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(258): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 258, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('Sster 004.pdf')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-05 22:55:28 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\ci4\app\Views\pages\preview.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('pages/preview', Array, true)
+#4 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(261): view('pages/preview', Array)
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('3')
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 22:55:41 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\ci4\app\Views\pages\preview.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 12, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Common.php(1217): CodeIgniter\View\View->render('pages/preview', Array, true)
+#4 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(261): view('pages/preview', Array)
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('3')
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#7 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-04-05 23:39:44 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(258): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 258, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('Sster 004.pdf')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-04-05 23:39:44 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(258): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'D:\\xampp\\htdocs...', 258, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->preview('Sster 004.pdf')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}

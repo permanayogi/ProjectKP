@@ -1,0 +1,82 @@
+CRITICAL - 2021-03-07 12:54:41 --> Trying to get property 'file' of non-object
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 233, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-07 12:56:44 --> Trying to get property 'file' of non-object
+#0 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 233, Array)
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('1')
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#3 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-03-07 12:58:49 --> File not found: uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploadsDAFTAR C...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('uploadsDAFTAR C...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploadsDAFTAR C...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-07 12:59:36 --> File not found: uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploadsDAFTAR C...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('uploadsDAFTAR C...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploadsDAFTAR C...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-07 13:00:57 --> File not found: uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploadsDAFTAR C...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('uploadsDAFTAR C...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploadsDAFTAR C...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-07 13:01:27 --> File not found: D:\xampp\htdocs\ci4\writable\uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('D:\\xampp\\htdocs...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-07 13:01:40 --> File not found: D:\xampp\htdocs\ci4\writable\uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('D:\\xampp\\htdocs...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('D:\\xampp\\htdocs...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-03-07 13:01:48 --> File not found: uploadsDAFTAR CALON ASESI PSKK 2020.pdf
+#0 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Files\File.php(51): CodeIgniter\Files\Exceptions\FileNotFoundException::forFileNotFound('uploadsDAFTAR C...')
+#1 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\DownloadResponse.php(116): CodeIgniter\Files\File->__construct('uploadsDAFTAR C...', true)
+#2 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\HTTP\ResponseTrait.php(890): CodeIgniter\HTTP\DownloadResponse->setFilePath('uploadsDAFTAR C...')
+#3 D:\xampp\htdocs\ci4\app\Controllers\Admin\SuratMasuk.php(233): CodeIgniter\HTTP\Response->download('uploadsDAFTAR C...', NULL)
+#4 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(936): App\Controllers\Admin\SuratMasuk->download('10')
+#5 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\SuratMasuk))
+#6 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ci4\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\ci4\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(45): require_once('D:\\xampp\\htdocs...')
+#9 {main}
