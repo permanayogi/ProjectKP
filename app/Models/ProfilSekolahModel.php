@@ -9,7 +9,7 @@ class ProfilSekolahModel extends Model
     protected $table = 'profil_sekolah';
     protected $primaryKey = 'id';
     protected $allowedFields = [
-        'nama_sekolah', 'alamat', 'provinsi', 'kecamatan'
+        'nama_sekolah', 'alamat_sekolah', 'provinsi', 'kecamatan', 'telpon', 'kode_pos'
     ];
 
     public function getData()

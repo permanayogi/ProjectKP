@@ -20,11 +20,12 @@ class Profil extends BaseController
         if (session()->get('level') == 'admin' || session()->get('level') == 'kepsek') {
             $urlSuratMasuk = '/admin/suratmasuk';
         } else {
-            $urlSuratMasuk = '/guru';
+            $urlSuratMasuk = 'guru/suratmasuk';
         }
         $data = [
             'title' => 'Profil',
             'data' => $this->userModel->getProfil($this->id),
+            'urlHome' => '/guru',
             'urlSuratMasuk' => $urlSuratMasuk,
             'urlProfil' => '/profil'
         ];

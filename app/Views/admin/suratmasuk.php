@@ -1,5 +1,6 @@
 <?= $this->extend('template/template') ?>
-
+<style>
+</style>
 <?= $this->section('content') ?>
 <div class="main-content">
     <section class="section">
@@ -54,28 +55,28 @@
                 <form id="form-suratmasuk" method="POST" enctype="multipart/form-data">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="no_surat">Nomor Surat</label>
+                            <label for="no_surat">Nomor Surat*</label>
                             <input type="hidden" name="id_surat" id="id_surat">
                             <input type="text" class="form-control" id="no_surat" name="no_surat" autocomplete="off">
                             <span id="no_surat_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="no_agenda">Nomor Agenda</label>
+                            <label for="no_agenda">Nomor Agenda*</label>
                             <input type="text" class="form-control" id="no_agenda" name="no_agenda" autocomplete="off">
                             <span id="no_agenda_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="tgl_surat">Tanggal Surat</label>
+                            <label for="tgl_surat">Tanggal Surat*</label>
                             <input type="text" class="form-control datepicker" id="tgl_surat" name="tgl_surat" autocomplete="off">
                             <span id="tgl_surat_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="tgl_diterima">Tanggal Diterima</label>
+                            <label for="tgl_diterima">Tanggal Diterima*</label>
                             <input type="text" class="form-control datepicker" id="tgl_diterima" name="tgl_diterima" autocomplete="off">
                             <span id="tgl_diterima_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6 ">
-                            <label for="sifat_surat">Sifat Surat</label>
+                            <label for="sifat_surat">Sifat Surat*</label>
                             <select type="text" class="form-control selectric" id="sifat_surat" name="sifat_surat">
                                 <option value="Segera">Segera</option>
                                 <option value="Penting">Penting</option>
@@ -85,7 +86,7 @@
                             <span id="sifat_surat_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="pengirim">Pengirim</label>
+                            <label for="pengirim">Pengirim*</label>
                             <input type="text" class="form-control" id="pengirim" name="pengirim" autocomplete="off">
                             <!-- <select class="form-control selectric" id="pengirim" name="pengirim">
                                 <option>No Selected</option>
@@ -93,17 +94,12 @@
                             <span id="pengirim_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="perihal">Perihal</label>
+                            <label for="perihal">Perihal*</label>
                             <input type="text" class="form-control" id="perihal" name="perihal" autocomplete="off">
                             <span id="perihal_error" class="text-danger"></span>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="isi_ringkas">Isi Ringkas</label>
-                            <input type="text" class="form-control" id="isi_ringkas" name="isi_ringkas" autocomplete="off">
-                            <span id="isi_ringkas_error" class="text-danger"></span>
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label for="file">File *pdf</label>
+                            <label for="file">File *pdf,jpeg,jpg,png (maks 2 MB)</label>
                             <label id="oldFileLabel"></label>
                             <div class="custom-file">
                                 <input type="hidden" class="custom-file-input" id="oldFile" name="oldFile">
@@ -177,16 +173,9 @@
                                         <td id="v_perihal"></td>
                                     </tr>
                                     <tr>
-                                        <td width="175">Isi Ringkas</td>
-                                        <td width="3">:</td>
-                                        <td id="v_isi_ringkas"></td>
-                                    </tr>
-                                    <tr>
                                         <td width="175">File</td>
                                         <td width="3">:</td>
                                         <td id="v_file">
-                                            <!-- <div id="img_preview" class="gallery">
-                                            </div> -->
                                         </td>
                                     </tr>
                                 </tbody>
@@ -195,8 +184,8 @@
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div id="button">
                             </div>
-                            <div class="table-responsive-sm">
-                                <table class="table table-hover">
+                            <div class="table-responsive">
+                                <table class="table table-hWxover">
                                     <thead>
                                         <tr>
                                             <th>No</th>
@@ -204,6 +193,7 @@
                                             <th>Dari</th>
                                             <th>Instruksi</th>
                                             <th>Diteruskan Ke</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody id="row">
@@ -223,7 +213,7 @@
     <div class="modal-dialog modal-xl" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="ajaxModalLabel">Add Disposisi</h5>
+                <h5 class="modal-title" id="ajaxModalLabel">Add/Edit Disposisi</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -231,15 +221,30 @@
             <div class="modal-body">
                 <form id="form-disposisi">
                     <div class="form-group">
-                        <label for="pengirim">Diteruskan Kepada</label>
+                        <label for="pengirim">Diteruskan Kepada*</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="selectAll">
+                            <label class="form-check-label" for="selectAll">
+                                Semua
+                            </label>
+                        </div>
+                        <ul>
+                            <li style="list-style-type: none;">
+                                <div id="checkbox">
+                                </div>
+                            </li>
+                        </ul>
+                        <span id="kepada_error" class="text-danger"></span>
+                        <input type="hidden" name="id_disposisi" id="id_disposisi">
+                        <input type="hidden" name="id_kepada" id="id_kepada">
                         <input type="hidden" name="id_surat" id="id">
-                        <select class="form-control selectric" id="users" name="users">
-                            <option>No Selected</option>
-                        </select>
-                        <span id="pengirim_error" class="text-danger"></span>
+                        <!-- <input type="hidden" name="data_kepada" id="data_kepada"> -->
+                        <!-- <select class="form-control selectric" id="users" name="users"> -->
+                        <!-- <option>No Selected</option>
+                        </select> -->
                     </div>
                     <div class="form-group">
-                        <label for="sifat_surat">Keterangan</label>
+                        <label for="sifat_surat">Instruksi*</label>
                         <input type="text" class="form-control" id="isi" name="isi">
                         <span id="isi_error" class="text-danger"></span>
                     </div>
@@ -247,7 +252,7 @@
             </div>
             <div class="modal-footer bg-whitesmoke br">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-arrow-circle-left "></i>&nbsp;Close</button>
-                <button type="button" class="btn btn-primary" onclick="add_disposisi()"><i class="fa fa-plus-circle"></i>&nbsp;Save</button>
+                <button type="button" class="btn btn-primary" onclick="proses_disposisi()"><i class="fa fa-plus-circle"></i>&nbsp;Save</button>
             </div>
         </div>
     </div>
@@ -281,6 +286,9 @@
             columnDefs: [{
                 targets: [0, 6, 7],
                 orderable: false,
+            }, {
+                targets: [7],
+                className: 'nowrap',
             }],
 
         });
@@ -312,18 +320,8 @@
                     $('#v_tgl_diterima').text(res.data.tanggal_diterima);
                     $('#v_pengirim').text(res.data.pengirim);
                     $('#v_sifat_surat').text(res.data.sifat_surat);
-                    $('#v_isi_ringkas').text(res.data.isi_ringkas);
-                    // if (res.data.disposisi == null) {
-                    //     $('#v_disposisi').text("");
-                    // } else {
-                    //     $('#v_disposisi').text(res.data.disposisi);
-                    // }
                     $('#v_perihal').text(res.data.perihal);
-                    // var html = '<iframe src="<?= base_url(); ?>/uploads/' + res.data.file + '" width="600" height="400"></iframe>'
-                    var html = '<a href="<?= base_url(); ?>/admin/suratmasuk/preview/' + res.data.id_surat + '" target="_blank">' + res.data.file + '</a>'
-                    // var html = '<a onclick="preview()" href="javascript:void(0)" data-img="<?= base_url(); ?>/admin/suratmasuk/download/' + res.data.id_surat + '">' + res.data.file + '</a>'
-                    // var html = '<div class="gallery-item" data-image="<?= base_url() ?>/uploads/img2.jpg' + '">' + '</div>';
-                    // var html = '<img src="<?= base_url() ?>/uploads/img2.jpg"> </img>';
+                    var html = '<a href="<?= base_url(); ?>/admin/suratmasuk/preview/' + res.data.id_surat + '" target="_blank">' + res.data.file + '</a>';
                     $('#v_file').html(html);
                 }
             }
@@ -347,11 +345,57 @@
     //     $('#previewModal').modal('show');
     // }
 
+    $('#selectAll').on('click', function() {
+        if (this.checked) {
+            $('.allchecked').each(function() {
+                this.checked = true;
+            });
+        } else {
+            $('.allchecked').each(function() {
+                this.checked = false;
+            });
+        }
+    });
+
+    function onChecked(e) {
+        if ($('.allchecked:checked').length == $('.allchecked').length) {
+            $('#selectAll').attr('checked', true);
+        } else {
+            $('#selectAll').attr('checked', false);
+        }
+        // if (e.currentTarget.checked) {
+        // alert('pantek');
+        // $('.allchecked').each(function() {
+        // alert(document.querySelectorAll('input[class="allchecked"]:checked').length);
+        // if()
+        // $('#selectAll').checked
+        // });
+    }
+
+    // $('.allchecked').on('click', function() {
+    //     alert('Pantek');
+
+    // });
+
     function disposisi(id_surat) {
         clear_error_message();
+        status = 'addDisposisi';
         $('#disposisiModal').modal('show');
         $('#id').val(id_surat);
         $('#form-disposisi')[0].reset();
+        // $.ajax({
+        //     url: "<?php echo base_url('admin/dashboard/getUsers'); ?>",
+        //     type: 'POST',
+        //     dataType: 'JSON',
+        //     success: function(data) {
+        //         var html = '';
+        //         var i;
+        //         for (i = 0; i < data.length; i++) {
+        // html += '<option value=' + data[i].id + '>' + data[i].fullname + ' - ' + data[i].jabatan + '</option>';
+        //         }
+        //         $('#users').html(html);
+        //     }
+        // });
         $.ajax({
             url: "<?php echo base_url('admin/dashboard/getUsers'); ?>",
             type: 'POST',
@@ -360,37 +404,126 @@
                 var html = '';
                 var i;
                 for (i = 0; i < data.length; i++) {
-                    html += '<option value=' + data[i].id + '>' + data[i].fullname + ' - ' + data[i].jabatan + '</option>';
+                    html += '<div class="form-check">' +
+                        '<input onchange="onChecked(event)" class="form-check-input allchecked" name="kepada[]" value="' + data[i].jabatan + '" type="checkbox" id="gridCheck' + i + '">' +
+                        '<label class="form-check-label" for="gridCheck' + i + '">' +
+                        data[i].jabatan +
+                        '</label>' +
+                        '</div>';
                 }
-                $('#users').html(html);
+                $('#checkbox').html(html);
             }
         });
         return false;
     }
 
-    function add_disposisi() {
+    // function add_disposisi() {
+    //     $.ajax({
+    //         url: "<?php echo base_url('admin/disposisi/store'); ?>",
+    //         type: 'POST',
+    //         dataType: 'JSON',
+    //         data: $('#form-disposisi').serialize(),
+    //         success: function(res) {
+    //             if (res.errors) {
+    //                 if (res.errors.isi) {
+    //                     $('#isi_error').html(res.errors.isi);
+    //                 }
+    //             }
+    //             if (res.success == true) {
+    //                 $('#message').removeClass('hide');
+    //                 $('#message').html(
+    //                     '<div class="alert alert-success alert-has-icon alert-dismissible">\n\
+    //                     <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>\n\
+    //                         <div class="alert-icon"><i class="far fa-lightbulb"></i></div>\n\
+    //                         <div class="alert-body">\n\
+    //                             <div class="alert-title">Success</div>\n\
+    //                             ' + res.message + '.\n\
+    //                         </div>\n\
+    //                     </div>');
+    //                 $('#disposisiModal').modal('hide');
+    //                 $('#viewModal').modal('hide');
+    //                 show_record();
+    //             }
+    //         }
+    //     });
+    // }
+
+    function editDisposisi(id_disposisi, kepada, id_surat) {
+        clear_error_message();
+        $('#selectAll').attr('checked', false);
+        status = 'editDisposisi';
+        $('#disposisiModal').modal('show');
+        $('#id_disposisi').val(id_disposisi);
+        $('#id_kepada').val(kepada);
+        $('#id').val(id_surat);
         $.ajax({
-            url: "<?php echo base_url('admin/disposisi/store'); ?>",
+            url: "<?php echo base_url('admin/disposisi/edit'); ?>",
+            type: 'POST',
+            dataType: 'JSON',
+            data: $('#form-disposisi').serialize(),
+            success: function(res) {
+                if (res.success == true) {
+                    // $('#users').val(res.data.kepada);
+                    $('#data_kepada').val(res.data.kepada);
+                    $('#isi').val(res.data.isi);
+                }
+            }
+        });
+        $.ajax({
+            url: "<?php echo base_url('admin/dashboard/getUsers'); ?>",
+            type: 'POST',
+            dataType: 'JSON',
+            success: function(data) {
+                var html = '';
+                var i;
+                var j = 0;
+                for (i = 0; i < data.length; i++) {
+                    var expKepada = kepada.split(", ");
+                    if (data[i].jabatan == expKepada[j]) {
+                        j++;
+                        html += '<div class="form-check">' +
+                            '<input onchange="onChecked(event)" checked="checked" class="form-check-input allchecked" name="kepada[]" value="' + data[i].jabatan + '" type="checkbox" id="gridCheck' + i + '">' +
+                            '<label class="form-check-label" for="gridCheck' + i + '">' +
+                            data[i].jabatan +
+                            '</label>' +
+                            '</div>';
+                    } else {
+                        html += '<div class="form-check">' +
+                            '<input onchange="onChecked(event)" class="form-check-input allchecked" name="kepada[]" value="' + data[i].jabatan + '" type="checkbox" id="gridCheck' + i + '">' +
+                            '<label class="form-check-label" for="gridCheck' + i + '">' +
+                            data[i].jabatan +
+                            '</label>' +
+                            '</div>';
+                    }
+                }
+                $('#checkbox').html(html);
+            }
+        });
+    }
+
+    function proses_disposisi() {
+        if (status == 'addDisposisi') {
+            url = "<?php echo base_url('admin/disposisi/store'); ?>";
+        } else if (status == 'editDisposisi') {
+            url = "<?php echo base_url('admin/disposisi/update'); ?>";
+        }
+        $.ajax({
+            url: url,
             type: 'POST',
             dataType: 'JSON',
             data: $('#form-disposisi').serialize(),
             success: function(res) {
                 if (res.errors) {
                     if (res.errors.isi) {
+                        $('#kepada_error').html(res.errors.kepada);
                         $('#isi_error').html(res.errors.isi);
                     }
                 }
                 if (res.success == true) {
                     $('#message').removeClass('hide');
-                    $('#message').html(
-                        '<div class="alert alert-success alert-has-icon alert-dismissible">\n\
+                    $('#message').html('<div class="alert alert-success alert-dismissible">\n\
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>\n\
-                            <div class="alert-icon"><i class="far fa-lightbulb"></i></div>\n\
-                            <div class="alert-body">\n\
-                                <div class="alert-title">Success</div>\n\
-                                ' + res.message + '.\n\
-                            </div>\n\
-                        </div>');
+                        <h5><i class="icon fa fa-info-circle"></i> <b>Success!</b> ' + res.message + '</h5></div>');
                     $('#disposisiModal').modal('hide');
                     $('#viewModal').modal('hide');
                     show_record();
@@ -408,8 +541,10 @@
         $('#no_agenda_error').html('');
         $('#tgl_diterima_error').html('');
         $('#pengirim_error').html('');
-        $('#isi_ringkas_error').html('');
         $('#file_error').html('');
+        $('#isi_error').html('');
+        $('#kepada_error').html('');
+        $('#selectAll').attr('checked', false);
     }
 
     function add_record() {
@@ -419,6 +554,15 @@
         $('.custom-file-label').html('Choose file');
         $('#form-suratmasuk')[0].reset();
         clear_error_message();
+        $.ajax({
+            url: "<?php echo base_url('admin/suratmasuk/generateNoSurat'); ?>",
+            type: 'POST',
+            dataType: 'JSON',
+            data: $('#form-suratmasuk').serialize(),
+            success: function(res) {
+                $('#no_agenda').val(res.data);
+            }
+        })
     }
 
     function edit(id_surat) {
@@ -426,7 +570,7 @@
         clear_error_message();
         $('#ajaxModal').modal('show');
         $('#id_surat').val(id_surat);
-        $('#file').html('');
+        $('#file').val('');
         $('.custom-file-label').html('Choose file');
         $.ajax({
             url: "<?php echo base_url('admin/suratmasuk/edit'); ?>",
@@ -442,9 +586,8 @@
                     $('#no_agenda').val(res.data.no_agenda);
                     $('#tgl_diterima').val(res.data.tanggal_diterima);
                     $('#pengirim').val(res.data.pengirim);
-                    $('#isi_ringkas').val(res.data.isi_ringkas);
                     $('#oldFile').val(res.data.file)
-                    var html = '(<a href="<?= base_url(); ?>/admin/suratmasuk/download/' + res.data.id_surat + '">' + res.data.file + '</a>)'
+                    var html = '(<a href="<?= base_url(); ?>/admin/suratmasuk/preview/' + res.data.id_surat + '" target="_blank">' + res.data.file + '</a>)'
                     $('#oldFileLabel').html(html);
                 }
             }
@@ -471,7 +614,7 @@
             success: function(res) {
                 if (res.errors) {
                     if (res.errors.no_surat) {
-                        $('#no_surat_error').html(res.errors.no_agenda);
+                        $('#no_surat_error').html(res.errors.no_surat);
                     }
                     if (res.errors.tgl_surat) {
                         $('#tgl_surat_error').html(res.errors.tgl_surat);
@@ -490,9 +633,6 @@
                     }
                     if (res.errors.pengirim) {
                         $('#pengirim_error').html(res.errors.pengirim);
-                    }
-                    if (res.errors.isi_ringkas) {
-                        $('#isi_ringkas_error').html(res.errors.isi_ringkas);
                     }
                     if (res.errors.userFile) {
                         $('#file_error').html(res.errors.userFile);
@@ -538,6 +678,33 @@
                                 swal('Data berhasil dihapus!', {
                                     icon: 'success',
                                 });
+                                show_record();
+                            }
+                        }
+                    })
+                }
+            });
+    }
+
+    function hapusDisposisi(id_disposisi) {
+        swal({
+                title: 'Hapus disposisi?',
+                icon: 'warning',
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((confirm) => {
+                if (confirm) {
+                    $.ajax({
+                        url: "<?php echo base_url('admin/disposisi/hapusDisposisi'); ?>" + '/' + id_disposisi,
+                        type: 'POST',
+                        dataType: 'JSON',
+                        success: function(res) {
+                            if (res.success == true) {
+                                swal('Data berhasil dihapus!', {
+                                    icon: 'success',
+                                });
+                                $('#viewModal').modal('hide');
                                 show_record();
                             }
                         }

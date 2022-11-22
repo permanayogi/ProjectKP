@@ -5,11 +5,13 @@ namespace App\Controllers\Admin;
 use App\Controllers\BaseController;
 use App\Models\SuratMasukModel;
 use App\Models\DisposisiModel;
+use App\Models\Transaksisuratmasukmodel;
 
 class SuratMasuk extends BaseController
 {
     protected $suratMasukModel;
     protected $disposisiModel;
+    protected $transaksiSuratMasukModel;
     public $output = [
         'success' => false,
         'message' => '',
@@ -20,19 +22,19 @@ class SuratMasuk extends BaseController
     {
         $this->suratMasukModel = new SuratMasukModel();
         $this->disposisiModel = new DisposisiModel();
+        $this->transaksiSuratMasukModel = new Transaksisuratmasukmodel();
     }
     public function index()
     {
         $data = [
             'title' => 'Surat Masuk',
-            'urlSuratMasuk' => '/admin/suratmasuk',
-            'urlProfil' => '/profil' //profil akun
         ];
         return view('admin/suratmasuk', $data);
     }
     public function ajax_list()
     {
         $suratMasukModel = $this->suratMasukModel;
+        $disposisiModel = $this->disposisiModel;
         $where = ['id_surat !=' => 0];
         $column_order = array('', 'tanggal_surat', 'no_surat', 'no_agenda', 'sifat_surat', 'pengirim', '', '');
         $column_search = array('no_surat', 'no_agenda', 'pengirim');
@@ -44,12 +46,12 @@ class SuratMasuk extends BaseController
         foreach ($list as $lists) {
             $no++;
             $row = array();
-            if ($lists->disposisi == 0) {
+            $countDisposisi = $disposisiModel->countDisposisi($lists->id_surat);
+            if ($countDisposisi == 0) {
                 $disposisi = '<a href="#" onclick="disposisi(' . $lists->id_surat . ') "title="Belum di disposisi" class="btn btn-sm btn-outline-success"><i class="far fa-paper-plane"></i></a>';
             } else {
                 $disposisi = '<a href="#profile" id="disposisi" onclick="detail(' . $lists->id_surat . ', ' . $get_disposisi . ') "title="Sudah di disposisi" class="btn btn-icon btn-sm btn-success"><i class="far fa-paper-plane"></i></a>';
             }
-
             $detail = '<a href="#" onclick="detail(' . $lists->id_surat . ') "title="Detail" class="btn btn-icon btn-sm btn-primary"><i class="far fa-eye"></i></a>';
             $edit = '<a href="#" onclick="edit(' . $lists->id_surat . ') "title="Edit" class="btn btn-icon btn-sm btn-warning"><i class="far fa-edit"></i></a>';
             $delete = '<a href="#" onclick="hapus(' . $lists->id_surat . ') "title="Delete"class="btn btn-icon btn-sm btn-danger"><i class="far fa-trash-alt"></i></a>';
@@ -72,8 +74,24 @@ class SuratMasuk extends BaseController
         echo json_encode($output);
     }
 
+    public function generateNoSurat()
+    {
+        $transaksiSuratMasukModel = $this->transaksiSuratMasukModel;
+        $query = $transaksiSuratMasukModel->getNomorSurat();
+        $no = $query->nomor;
+        $nomorUrut = $no + 1;
+        $nomorAgenda = sprintf('%03s', $nomorUrut);
+        if ($this->request->isAJAX()) {
+            $this->output['success'] = true;
+            $this->output['message']  = 'Data ditemukan';
+            $this->output['data']   = $nomorAgenda;
+            echo json_encode($this->output);
+        }
+    }
+    //add data
     public function store()
     {
+        $transaksiSuratMasukModel = $this->transaksiSuratMasukModel;
         $suratMasukModel = $this->suratMasukModel;
         if ($this->request->isAJAX()) {
             $validation =  \Config\Services::validation();
@@ -82,10 +100,9 @@ class SuratMasuk extends BaseController
                 'tgl_surat'  => 'required',
                 'sifat_surat'        => 'required',
                 'perihal'  => 'required',
-                'no_agenda'  => 'required',
+                'no_agenda'  => 'required|is_unique[surat_masuk.no_agenda]',
                 'tgl_diterima'  => 'required',
                 'pengirim'  => 'required',
-                'isi_ringkas'  => 'required',
                 'userFile' => [
                     'rules' => 'uploaded[userFile]|mime_in[userFile,application/pdf,image/jpg,image/jpeg,image/png]|max_size[userFile,2048]',
                     'errors' => [
@@ -107,7 +124,6 @@ class SuratMasuk extends BaseController
                 $sifat_surat = $this->request->getPost('sifat_surat');
                 $pengirim = $this->request->getPost('pengirim');
                 $perihal = $this->request->getPost('perihal');
-                $isi_ringkas = $this->request->getPost('isi_ringkas');
                 $file = $this->request->getFile('userFile');
                 $fileName = $file->getName();
                 $file->move('uploads');
@@ -119,11 +135,17 @@ class SuratMasuk extends BaseController
                     'sifat_surat'  => $sifat_surat,
                     'pengirim'        => $pengirim,
                     'perihal'           => $perihal,
-                    'isi_ringkas'  => $isi_ringkas,
                     'file'        => $fileName,
                     'created_by' => $user_id
                 ];
-                $save = $suratMasukModel->save($data);
+                $save = $suratMasukModel->insert($data);
+                $id_surat = $suratMasukModel->getInsertID();
+                $transaksi = [
+                    'kode_transaksi' => $no_agenda,
+                    'tahun' => date('Y'),
+                    'id_surat' => $id_surat,
+                ];
+                $transaksiSuratMasukModel->save($transaksi);
                 if ($save) {
                     $this->output['success'] = true;
                     $this->output['message'] = 'Record has been added successfully.';
@@ -175,7 +197,6 @@ class SuratMasuk extends BaseController
                 'no_agenda'  => 'required',
                 'tgl_diterima'  => 'required',
                 'pengirim'  => 'required',
-                'isi_ringkas'  => 'required',
                 'userFile' => [
                     'rules' => 'mime_in[userFile,application/pdf,image/jpg,image/jpeg,image/png]|max_size[userFile,2048]',
                     'errors' => [
@@ -196,7 +217,6 @@ class SuratMasuk extends BaseController
                 $sifat_surat = $this->request->getPost('sifat_surat');
                 $pengirim = $this->request->getPost('pengirim');
                 $perihal = $this->request->getPost('perihal');
-                $isi_ringkas = $this->request->getPost('isi_ringkas');
                 $file = $this->request->getFile('userFile');
                 if ($file->getError() == 4) {
                     $fileName = $this->request->getPost('oldFile');
@@ -213,7 +233,6 @@ class SuratMasuk extends BaseController
                     'sifat_surat'  => $sifat_surat,
                     'pengirim'        => $pengirim,
                     'perihal'           => $perihal,
-                    'isi_ringkas'  => $isi_ringkas,
                     'file'        => $fileName,
                     'updated_by' => $user_id
                 ];

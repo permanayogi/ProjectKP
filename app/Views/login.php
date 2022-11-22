@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Login &mdash; Stisla</title>
+    <title>Login &mdash; Sistem Informasi Persuratan SMAN 1 Tanjab Barat</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="<?= base_url() ?>/node_modules/bootstrap/css/bootstrap.min.css">
@@ -26,17 +26,25 @@
                         <div class="login-brand">
                             <img src="../assets/img/stisla-fill.svg" alt="logo" width="100" class="shadow-light rounded-circle">
                         </div>
-
+                        <?php if (session()->getFlashData('loginfailed')) : ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <div class="alert-body">
+                                    <?= session()->getFlashData('loginfailed') ?>
+                                </div>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                        <?php endif ?>
                         <div class="card card-primary">
                             <div class="card-header">
                                 <h4>Login</h4>
                             </div>
-
                             <div class="card-body">
                                 <form method="POST" action="/login/auth">
                                     <div class="form-group">
                                         <label for="email">Username</label>
-                                        <input id="email" type="text" class="form-control" name="username" tabindex="1" required autofocus>
+                                        <input id="email" type="text" class="form-control" name="username" tabindex="1" autocomplete="off" required autofocus>
                                         <div class="invalid-feedback">
                                             Please fill in this field
                                         </div>
@@ -62,7 +70,7 @@
                             </div>
                         </div>
                         <div class="simple-footer">
-                            Copyright &copy; Stisla 2018
+                            Copyright &copy; 2021 SMAN 1 Tanjab Barat. All rights reserved.
                         </div>
                     </div>
                 </div>
@@ -77,7 +85,8 @@
     <script src="/assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
-
+    <script src="<?= base_url() ?>/node_modules/sweetalert/sweetalert.min.js"></script>
+    <script src="<?= base_url() ?>/assets/js/page/modules-sweetalert.js"></script>
     <!-- Template JS File -->
 
     <!-- Page Specific JS File -->

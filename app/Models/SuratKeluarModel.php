@@ -4,14 +4,14 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class SuratKeluarModel extends Model
+class Suratkeluarmodel extends Model
 {
     public $db;
     public $builder;
     protected $table = 'surat_keluar';
     protected $primaryKey = 'id_surat';
     protected $allowedFields = [
-        'no_surat', 'no_agenda', 'tanggal_surat', 'penerima', 'file', 'created_by', 'updated_by'
+        'no_surat', 'no_agenda', 'tanggal_surat', 'kepada', 'perihal', 'file', 'tipe', 'created_by', 'updated_by'
     ];
     protected $useTimestamps = true;
     protected $createdField = 'created_at';

@@ -46,28 +46,28 @@ class Notifikasi extends BaseController
             $status = $result['status'];
             if ($status == 'Belum di proses') {
                 echo "
-                <div class='dropdown-item dropdown-item-unread'>
+                <a href='" . base_url('guru/suratmasuk') . "'  class='dropdown-item dropdown-item-unread'>
                     <div class='dropdown-item-icon bg-primary text-white'>
-                        <i class='fas fa-code'></i>
+                    <i class='fas fa-envelope'></i>
                     </div>
                     <div class='dropdown-item-desc'>
                         <b>$newFormatDate;</b><br>
                         <b>No Surat/Agenda : $nomor_surat/$nomor_agenda </b><br>
                         <p>$perihal</p>
                     </div>
-                </div>";
+                </a>";
             } else if ($status == 'Sudah di proses') {
                 echo "
-                <div class='dropdown-item dropdown-item'>
+                <a href = '" . base_url('guru/suratmasuk') . "'class='dropdown-item dropdown-item'>
                     <div class='dropdown-item-icon bg-primary text-white'>
-                        <i class='fas fa-code'></i>
+                        <i class='fas fa-envelope'></i>
                     </div>
                     <div class='dropdown-item-desc'>
                         <b>$newFormatDate;</b><br>
                         <b>No Surat/Agenda : $nomor_surat/$nomor_agenda  </b><br>
                         <p>$perihal</p>
                     </div>
-                </div>";
+                </a>";
             }
         }
     }

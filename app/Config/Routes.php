@@ -37,9 +37,13 @@ $routes->get('Admin/Dashboard', 'Admin\Dashboard::index', ['filter' => 'ceklogin
 // $routes->get('/admin/dashboard', 'Admin/Dashboard::index', ['filter' => 'ceklogin']);
 $routes->add('notification', 'Guru\Notifikasi::notifikasi', ['filter' => 'ceklogin']);
 $routes->add('countNotification', 'Guru\Notifikasi::countNotification', ['filter' => 'ceklogin']);
-$routes->get('profil', 'Admin\Profil::index', ['filter' => 'ceklogin']);
 $routes->add('updateprofil', 'Admin\Profil::updateProfil', ['filter' => 'ceklogin']);
 $routes->add('changepassword', 'Admin\Profil::changePassword', ['filter' => 'ceklogin']);
+$routes->add('cetaklaporansuratmasuk', 'Admin\LaporanSuratMasuk::cetakLaporan', ['filter' => 'ceklogin']);
+$routes->add('cetaklaporandisposisi', 'Admin\LaporanSuratMasuk::cetakDisposisi', ['filter' => 'ceklogin']);
+$routes->add('cetaklaporansuratkeluar', 'Admin\LaporanSuratKeluar::cetakLaporan', ['filter' => 'ceklogin']);
+$routes->add('suratketerangan', 'Admin\CetakSuratKeterangan::cetakSurat', ['filter' => 'ceklogin']);
+$routes->add('suratundangan', 'Admin\CetakSuratUndangan::cetakSurat', ['filter' => 'ceklogin']);
 $routes->group('admin', ['filter' => 'ceklogin'], function ($routes) {
 	$routes->get('/', 'Admin\Dashboard::index');
 	$routes->get('suratmasuk', 'Admin\SuratMasuk::index');
@@ -47,10 +51,13 @@ $routes->group('admin', ['filter' => 'ceklogin'], function ($routes) {
 	$routes->get('laporansuratmasuk', 'Admin\LaporanSuratMasuk::index');
 	$routes->get('laporansuratkeluar', 'Admin\LaporanSuratKeluar::index');
 	$routes->get('users', 'Admin\Users::index');
+	$routes->get('profil', 'Admin\Profil::index', ['filter' => 'ceklogin']);
 });
 $routes->group('guru', ['filter' => 'ceklogin'], function ($routes) {
 	$routes->get('/', 'Guru\Home::index');
-	$routes->add('listData', 'Guru\Home::ajax_list');
+	$routes->add('listData', 'Guru\SuratMasuk::ajax_list');
+	$routes->add('suratmasuk', 'Guru\SuratMasuk::index');
+	$routes->get('profil', 'Admin\Profil::index', ['filter' => 'ceklogin']);
 });
 // $routes->group('suratmasuk', ['filter' => 'ceklogin'], function ($routes) {
 // 	$routes->get('/', 'Admin/SuratMasuk::index');

@@ -33,7 +33,9 @@ class UserModel extends Model
     {
         $users_id = session()->get('id');
         $this->where('id !=', $users_id);
-        $this->where('id !=', 1);
+        $this->where('jabatan !=', 'Admin(TU)');
+        $this->where('jabatan !=', 'Kepala Sekolah');
+        $this->orderBy('jabatan', 'ASC');
         return $this->find();
     }
 

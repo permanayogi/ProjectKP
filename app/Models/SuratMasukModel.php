@@ -13,7 +13,7 @@ class SuratMasukModel extends Model
     protected $primaryKey = 'id_surat';
     protected $allowedFields = [
         'no_surat', 'no_agenda', 'tanggal_surat',
-        'tanggal_diterima', 'sifat_surat', 'pengirim', 'perihal', 'isi_ringkas',  'file', 'disposisi', 'created_by', 'updated_by'
+        'tanggal_diterima', 'sifat_surat', 'pengirim', 'perihal',  'file', 'disposisi', 'created_by', 'updated_by'
     ];
     protected $useTimestamps = true;
     protected $createdField = 'created_at';
@@ -27,15 +27,25 @@ class SuratMasukModel extends Model
 
     protected function _get_datatables_query($table, $column_order, $column_search, $order, $data = '')
     {
-
         $this->builder = $this->db->table($table);
+        // if (session()->get('level') != 'admin' && session()->get('level') != 'kepsek') {
+        //     $this->builder->select($table . ".*, disposisi.id_disposisi, disposisi.status");
+        //     $this->builder->join('disposisi', 'surat_masuk.id_surat = disposisi.id_surat');
+        //     $this->builder->whereIn('disposisi.id_disposisi', function (BaseBuilder $builder) {
+        //         return $builder->select('MAX(id_disposisi)', false)->from('disposisi')->where('kepada', session()->get('id'))->groupBy('id_surat');
+        //     });
+        // }
+        // if (session()->get('level') != 'admin' && session()->get('level') != 'kepsek') {
+        //     $this->builder->select($table . ".*, disposisi.id_disposisi, disposisi.status");
+        //     $this->builder->join('disposisi', 'surat_masuk.id_surat = disposisi.id_surat');
+        //     $this->builder->whereIn('disposisi.id_disposisi', function (BaseBuilder $builder) {
+        //         return $builder->select('MAX(id_disposisi)', false)->from('disposisi')->like('kepada', session()->get('jabatan'))->groupBy('id_surat');
+        //     });
         if (session()->get('level') != 'admin' && session()->get('level') != 'kepsek') {
-            $this->builder->select($table . ".*, disposisi.id_disposisi, disposisi.status");
-            $this->builder->join('disposisi', 'surat_masuk.id_surat = disposisi.id_surat');
-            // $this->builder->where($data);
-            // $this->builder->groupBy("id_surat");
-            $this->builder->whereIn('disposisi.id_disposisi', function (BaseBuilder $builder) {
-                return $builder->select('MAX(id_disposisi)', false)->from('disposisi')->where('kepada', session()->get('id'))->groupBy('id_surat');
+            $this->builder->select($table . ".*, disposisi_per_user.id_disposisi, disposisi_per_user.status");
+            $this->builder->join('disposisi_per_user', 'surat_masuk.id_surat = disposisi_per_user.id_surat');
+            $this->builder->whereIn('disposisi_per_user.id', function (BaseBuilder $builder) {
+                return $builder->select('MAX(id)', false)->from('disposisi_per_user')->like('kepada', session()->get('jabatan'))->groupBy('id_surat');
             });
         }
 
@@ -66,8 +76,13 @@ class SuratMasukModel extends Model
         $this->_get_datatables_query($table, $column_order, $column_search, $order, $data);
         if (isset($_POST['length']) && $_POST['length'] != -1)
             $this->builder->limit($_POST['length'], $_POST['start']);
+
         if ($data) {
-            $this->builder->where($data);
+            if (session()->get('level') != 'admin' && session()->get('level') != 'kepsek') {
+                $this->builder->like($data);
+            } else {
+                $this->builder->where($data);
+            }
         }
         $query = $this->builder->get();
         return $query->getResult();
@@ -87,7 +102,7 @@ class SuratMasukModel extends Model
     {
         $this->builder->select($table . ".*");
         if (session()->get('level') != 'admin' && session()->get('level') != 'kepsek') {
-            $this->builder->join('disposisi', 'surat_masuk.id_surat = disposisi .id_surat');
+            $this->builder->join('disposisi_per_user', 'surat_masuk.id_surat = disposisi_per_user.id_surat');
             $this->builder->where($data);
             $this->builder->groupBy("id_surat");
         }
@@ -96,10 +111,10 @@ class SuratMasukModel extends Model
 
     public function notifikasi()
     {
-        $userId = session()->get('id');
-        $this->select("surat_masuk.*, disposisi.status");
-        $this->join('disposisi', 'surat_masuk.id_surat = disposisi .id_surat');
-        $this->where(['disposisi.kepada' => $userId]);
+        $jabatan = session()->get('jabatan');
+        $this->select("surat_masuk.*, disposisi_per_user.status");
+        $this->join('disposisi_per_user', 'surat_masuk.id_surat = disposisi_per_user.id_surat');
+        $this->like('disposisi_per_user.kepada', $jabatan);
         // $this->where(['disposisi.status' => 'Belum di proses']);
         $this->orderBy('tanggal_surat', 'DESC');
         $this->orderBy('status', 'ASC');
@@ -110,11 +125,11 @@ class SuratMasukModel extends Model
 
     public function countNotification()
     {
-        $userId = session()->get('id');
+        $userId = session()->get('jabatan');
         $this->select("*");
-        $this->join('disposisi', 'surat_masuk.id_surat = disposisi .id_surat');
-        $this->where(['disposisi.kepada' => $userId]);
-        $this->where(['disposisi.status' => 'Belum di proses']);
+        $this->join('disposisi_per_user', 'surat_masuk.id_surat = disposisi_per_user.id_surat');
+        $this->where(['disposisi_per_user.status' => 'Belum di proses']);
+        $this->like('disposisi_per_user.kepada', $userId);
         $this->limit(4);
         return $this->countAllResults();
     }

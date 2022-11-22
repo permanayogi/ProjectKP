@@ -23,8 +23,6 @@ class Users extends BaseController
     {
         $data = [
             'title' => 'User List',
-            'urlSuratMasuk' => '/admin/suratmasuk',
-            'urlProfil' => '/admin/profil/' . session()->get('id') //profil akun
         ];
         return view('admin/users', $data);
     }

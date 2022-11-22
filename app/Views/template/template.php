@@ -8,13 +8,13 @@
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
     <!-- CSS Libraries -->
     <link rel="stylesheet" href="<?= base_url() ?>/node_modules/bootstrap-daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="<?= base_url() ?>/node_modules/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="<?= base_url() ?>/node_modules/datatables/Select-1.2.4/css/select.bootstrap4.min.css">
-    <link rel="stylesheet" href="<?= base_url() ?>/node_modules/chocolat/dist/css/chocolat.css">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="<?= base_url() ?>/assets/css/style.css">
@@ -54,9 +54,15 @@
                             <div class="d-sm-none d-lg-inline-block"><?= session()->get('fullname') ?></div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
-                            <a href="<?= $urlProfil ?>" class="dropdown-item has-icon">
-                                <i class="far fa-user"></i> Profile
-                            </a>
+                            <?php if (session()->get('level') == 'admin' || session()->get('level') == 'kepsek') { ?>
+                                <a href="/admin/profil" class="dropdown-item has-icon">
+                                    <i class="far fa-user"></i> Profile
+                                </a>
+                            <?php } else { ?>
+                                <a href="/guru/profil" class="dropdown-item has-icon">
+                                    <i class="far fa-user"></i> Profile
+                                </a>
+                            <?php } ?>
                             <div class="dropdown-divider"></div>
                             <a href="<?= base_url('/login/logout') ?>" class="dropdown-item has-icon text-danger">
                                 <i class="fas fa-sign-out-alt"></i> Logout
@@ -69,7 +75,7 @@
             <?= $this->renderSection('content') ?>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+                    Copyright &copy; 2021 SMAN 1 Tanjab Barat. All rights reserved.
                 </div>
                 <div class="footer-right">
                     2.3.0
@@ -98,7 +104,6 @@
     <script src="<?= base_url() ?>/node_modules/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js"></script>
     <script src="<?= base_url() ?>/node_modules/datatables/Select-1.2.4/js/dataTables.select.min.js"></script>
     <script src="<?= base_url() ?>/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
-    <script src="<?= base_url() ?>/node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
     <!-- Page Specific JS File -->
     <script src="<?= base_url() ?>/assets/js/page/modules-datatables.js"></script>
